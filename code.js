@@ -1,4 +1,4 @@
-// Updated JavaScript with new rule functionality and responsive design
+
 let rows = 15;
 let cols = 15;
 let playing = false;
@@ -6,9 +6,9 @@ let timer;
 let reproductionTime = 500;
 let grid, nextGrid;
 let colorfulMode = false;
-let cellSize = 20; // Default cell size
+let cellSize = 20; 
 let currentSkin = 'default';
-let customRuleActive = false; // Flag for custom rules
+let customRuleActive = false; 
 
 document.addEventListener('DOMContentLoaded', () => {
   initializeGrids();
@@ -133,7 +133,7 @@ function applyRules(row, col) {
 
 function applyCustomRules(row, col) {
   const neighbors = countNeighbors(row, col);
-  nextGrid[row][col] = grid[row][col] || neighbors > 0 ? 1 : 0; // Custom rule: no cell dies, and all neighbors become live
+  nextGrid[row][col] = grid[row][col] || neighbors > 0 ? 1 : 0; 
 }
 
 function countNeighbors(row, col) {
